@@ -20,7 +20,7 @@ window.fbAsyncInit = function () {
 function checkLoginState() {
   FB.getLoginStatus(function (response) {
     $.ajax({
-      url: `http://localhost:3000/fb-login`,
+      url: `https://boiling-dawn-83846.herokuapp.com/fb-login`,
       method: "POST",
       data: {
         token: response.authResponse.accessToken
